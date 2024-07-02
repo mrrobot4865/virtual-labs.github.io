@@ -19,12 +19,12 @@ if (gb2){
 
 if (cab){
   cab.addEventListener("click", function() {
-    window.location.href = "../experiments/caexperiments.html"; // Replace "another_page.html" with the URL of the page you want to navigate to
+    window.location.href = "./experiments/circuit_analysis/caexperiments.html"; // Replace "another_page.html" with the URL of the page you want to navigate to
   });
 }
 
 if(kvl){
   kvl.addEventListener("click", function() {
-    window.location.href = ""; // Replace "another_page.html" with the URL of the page you want to navigate to
+    window.location.href = "./kvl-experiment/kvl-aim/kvl_aim.html"; // Replace "another_page.html" with the URL of the page you want to navigate to
   });
 }
