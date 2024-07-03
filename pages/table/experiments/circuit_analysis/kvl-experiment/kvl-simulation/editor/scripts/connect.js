@@ -1,3 +1,11 @@
+function redirectToNewPage() {
+  const name = document.getElementById('name').value;
+  const newUrl = `display.html?name=${encodeURIComponent(name)}`;
+  window.location.href = newUrl;
+  return false;
+}
+
+
 function updateValue(sliderId,numberId) {
   document.getElementById(numberId).value = document.getElementById(sliderId).value;
   

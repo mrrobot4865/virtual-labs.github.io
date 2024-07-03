@@ -857,6 +857,20 @@ body {
 }
 
 
+.container {
+  position: absolute;
+  left: 1115px;
+  top: 900.95px;
+  width: 240px;
+  height: 22px;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.name-input {
+  margin-bottom: 20px;
+}
+
 
 
 

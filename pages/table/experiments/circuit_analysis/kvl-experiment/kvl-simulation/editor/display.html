@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Name and Image</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .name-display {
+            position: absolute;
+            top: 330px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            /* font-weight: bold; */
+            font-family: 'Alex Brush', cursive;
+        }
+        .image-container {
+            position: relative;
+            text-align: center;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <div class="name-display" id="nameDisplay"></div>
+            <img src="apprecia.png" alt="Your Image">
+        </div>
+        <button onclick="goToRelatedPage()">Go to Result Page</button>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            document.getElementById('nameDisplay').innerText = name;
+        }
+
+        function goToRelatedPage() {
+            window.location.href = "../../kvl-result/kvl_result.html";
+        }
+    </script>
+</body>
+</html>
