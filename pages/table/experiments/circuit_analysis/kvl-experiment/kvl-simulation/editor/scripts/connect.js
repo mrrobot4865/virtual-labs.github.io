@@ -1,4 +1,10 @@
 window.onload = function() {
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var instance = jsPlumb.getInstance();
+    // Your jsPlumb code here
+
+
     var instance = jsPlumb.getInstance();
     var connections = {
       'point1_point2': false,
@@ -158,7 +164,7 @@ function donotshowLED() {
     //    alert("Warning");
     }
 });  
-
+});
 
 };
 
