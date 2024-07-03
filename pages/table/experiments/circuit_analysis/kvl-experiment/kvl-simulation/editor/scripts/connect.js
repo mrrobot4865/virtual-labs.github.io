@@ -1,6 +1,6 @@
 window.onload = function() {
 
-  document.addEventListener('DOMContentLoaded', function() {
+  // document.addEventListener('DOMContentLoaded', function() {
     var instance = jsPlumb.getInstance();
     // Your jsPlumb code here
 
@@ -164,7 +164,7 @@ function donotshowLED() {
     //    alert("Warning");
     }
 });  
-});
+// });
 
 };
 
