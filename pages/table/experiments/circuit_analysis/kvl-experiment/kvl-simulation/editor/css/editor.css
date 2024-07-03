@@ -778,6 +778,96 @@ body {
 
 }
 
+#slider1 {
+  position: absolute;
+  left: 1115px;
+  top: 460.95px;
+  width: 240px;
+  height: 76px;
+}
+
+#slider2 {
+  position: absolute;
+  left: 1115px;
+  top: 620.95px;
+  width: 240px;
+  height: 76px;
+}
+
+
+#number1 {
+  position: absolute;
+  left: 1115px;
+  top: 430.95px;
+  width: 240px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 8px;
+}
+
+#number2 {
+  position: absolute;
+  left: 1115px;
+  top: 590.95px;
+  width: 240px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 8px;
+}
+
+#result {
+  position: absolute;
+  left: 1115px;
+  top: 750.95px;
+  width: 240px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 8px;
+}
+
+#label1 {
+  position: absolute;
+  left: 1115px;
+  top: 390.95px;
+  width: 240px;
+  height: 22px;
+  font-size: 30px;
+  border-radius: 8px;
+}
+
+
+#label2 {
+  position: absolute;
+  left: 1115px;
+  top: 550.95px;
+  width: 240px;
+  height: 22px;
+  font-size: 30px;
+  border-radius: 8px;
+}
+
+#label3 {
+  position: absolute;
+  left: 1115px;
+  top: 710.95px;
+  width: 240px;
+  height: 22px;
+  font-size: 30px;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hidden{
   display: none;
 }

@@ -1,3 +1,73 @@
+function updateValue(sliderId,numberId) {
+  document.getElementById(numberId).value = document.getElementById(sliderId).value;
+  
+}
+
+function updateSlider(sliderId,numberId) {
+document.getElementById(sliderId).value = document.getElementById(numberId).value;
+}
+
+
+function calculateDivision() {
+  const number1 = parseFloat(document.getElementById('number1').value);
+  const number2 = parseFloat(document.getElementById('number2').value);
+  const result = number1 / number2;
+
+  if (isNaN(result) || !isFinite(result)) {
+      document.getElementById('result').value = 'Invalid division';
+  } else {
+      document.getElementById('result').value = result;
+  }
+}
+
+function storeResult() {
+  const number1 = parseFloat(document.getElementById('number1').value);
+  const number2 = parseFloat(document.getElementById('number2').value);
+  const result = parseFloat(document.getElementById('result').value);
+
+  if (!isNaN(result) && isFinite(result)) {
+      results.push({ number1, number2, result });
+      updateTable();
+  }
+}
+
+function updateTable() {
+  const tbody = document.getElementById('resultsTable').querySelector('tbody');
+  tbody.innerHTML = '';
+
+  results.forEach((entry, index) => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+          <td>${entry.number1}</td>
+          <td>${entry.number2}</td>
+          <td>${entry.result}</td>
+      `;
+      tbody.appendChild(row);
+  });
+}
+
+function executeMaster(){
+  calculateDivision();
+  // storeResult();
+  // updateTable();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 window.onload = function() {
 
   // document.addEventListener('DOMContentLoaded', function() {

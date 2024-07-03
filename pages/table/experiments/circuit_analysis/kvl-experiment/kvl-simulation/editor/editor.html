@@ -38,9 +38,25 @@
                 <div class="name"></div>
                 <div class="name"></div>
                 <div class="v74_47">
-                
-                </div><div class="v73_43"><div class="v73_44"></div>
-                <span class="v73_45">Simulate</span>
+                </div>
+                <div id="input1">
+                    <label id="label1" for="number1">Voltage:</label>
+                    <input type="range" id="slider1" min="0" max="100" step="1" value="50" oninput="updateValue('slider1', 'number1')">
+                    <input type="number" id="number1" min="0" max="50" step="1" value="25" oninput="updateSlider('slider1', 'number1')">
+        
+                    </div>
+                    <div id="input2">
+                    <label id="label2" for="number2">Resistance:</label>
+                    <input type="range" id="slider2" min="0" max="100" step="1" value="50" oninput="updateValue('slider2', 'number2')">
+                    <input type="number" id="number2" min="0" max="50" step="1" value="25" oninput="updateSlider('slider2', 'number2')">
+                    </div>
+                    <div id="output">
+                        <label id="label3" for="number2">Current:</label>
+                        <input type="text" id="result" readonly>
+                    </div>
+                <div class="v73_43"><div class="v73_44"></div>
+
+                <button onclick="executeMaster()"><span class="v73_45">Simulate</span></button>
             </div><div class="v74_49"></div><div class="v74_50">
             </div><div id="v75_54" class="v75_54"><div class="v75_52"></div>
             <div class="v75_53"></div></div><div id="v75_64" class="v75_64">
